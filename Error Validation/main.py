@@ -31,6 +31,10 @@ def nombra_pod(carpeta):
                 if nombre.lower() in nombre_archivo.lower():
                     if 'stack' in nombre_archivo.lower():
                         nombre += ' Stack'
+                    if 'flooring' in nombre_archivo.lower():
+                        nombre += ' Flooring'
+                    if 'tools/hoses' in nombre_archivo.lower():
+                        nombre += ' Tools/Hoses'
                 dic_pods[nombre_archivo] = nombre
                 break  # Deja de buscar en la lista de nombres cuando encuentra una coincidencia
 
